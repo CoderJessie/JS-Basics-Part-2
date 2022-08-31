@@ -1,4 +1,5 @@
 # JS-Basics-Part-2
 This is the Fundamentals of JavaScript part 2
 
-##Boot camp
+## Bootcamp class
+
