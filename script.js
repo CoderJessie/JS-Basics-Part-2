@@ -148,8 +148,8 @@ const calcAverage = (a, b, c) => (a + b + c) / 3;
 // console.log(checkWinner(scoreDolphins, scoreKoalas));
 
 //Test Data 2
-const scoreDolphins = calcAverage(85, 54, 41);
-const scoreKoalas = calcAverage(23, 34, 27);
+let scoreDolphins = calcAverage(85, 54, 41);
+let scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 
 const checkWinner = function (avgDolphins, avgKoalas) {
@@ -161,4 +161,9 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 		return `There is no winner`;
 	}
 };
+console.log(checkWinner(scoreDolphins, scoreKoalas));
+//OR
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
 console.log(checkWinner(scoreDolphins, scoreKoalas));
