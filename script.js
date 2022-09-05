@@ -178,3 +178,18 @@ const formalName = function (firstName) {
 };
 console.log(formalName('Jonas'));
 
+///How to call a random number
+const randGame = function (bringNo) {
+	let rand = Math.floor(Math.random()* 10) +1 ;
+	console.log(`Your number is ${bringNo}`);
+	console.log(`Random value is ${rand}`);
+	if (bringNo != rand) {
+		console.log(`Sarah is a fool`);
+	} else if (bringNo === rand) {
+		console.log(`Victor is wise`);
+	} else {
+		console.log(`Incomplete information`);
+	}
+};
+
+randGame(0);
