@@ -126,7 +126,6 @@ HINT: To calculate average of 3 values, add them all together and divide by 3.
 HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores.
 
 GOOD LUCK
-*/
 
 //SOLUTION
 const calcAverage = (a, b, c) => (a + b + c) / 3;
@@ -167,3 +166,15 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 console.log(checkWinner(scoreDolphins, scoreKoalas));
+*/
+
+///How to call a function
+const fullName = function (firstName) {
+	return `My name is ${firstName}`;
+};
+const formalName = function (firstName) {
+	const newName = fullName(firstName);
+	return `My name is ${firstName}`;
+};
+console.log(formalName('Jonas'));
+
