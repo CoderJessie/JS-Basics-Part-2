@@ -209,3 +209,6 @@ console.log(friends[2]);
 
 console.log(friends.length);//used to get the number of elements in an Array.
 console.log(friends[friends.length - 1]);//used to get the last element of any Array.
+////TO ADD AN ELEMENT TO THE ARRAY
+friends[2] = 'Jay';//Arrays can be changed that is why we can reuse friends here despite using 'const' to declare the variable earlier.
+console.log(friends);
