@@ -202,7 +202,7 @@ const friend3 = 'Peter';
 //use an array to store them like this:
 const friends = ['Micheal', 'Steven', 'Peter'];//basic way of calling an array called 'a literal syntax'.
 console.log(friends);
-const years = new Array(1991, 1984, 2008, 2020);//we called the array function here using 'new Array'(we use new so that the function can run without the new keyword it wouldnt run)
+// const years = new Array(1991, 1984, 2008, 2020);//we called the array function here using 'new Array'(we use new so that the function can run without the new keyword it wouldnt run)
 
 console.log(friends[0]);
 console.log(friends[2]);
@@ -212,3 +212,24 @@ console.log(friends[friends.length - 1]);//used to get the last element of any A
 ////TO ADD AN ELEMENT TO THE ARRAY
 friends[2] = 'Jay';//Arrays can be changed that is why we can reuse friends here despite using 'const' to declare the variable earlier.
 console.log(friends);
+// friends = ['Bob', 'Alice']; //We cant reassign variables to an array like this because it is illegal.
+const firstName = 'Jessica';
+const jessica = [firstName, 'Walter', 2037 - 1991, 'Student', friends];
+console.log(jessica);
+console.log(jessica.length);
+
+//EXERCISE
+const calcAge = function(birthYear){
+	return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+//To calculate the calcAge do not do this:
+// console.log(calcAge(years)); //this wont work because the whole array is being substituted for birthYear in the function.
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
