@@ -166,7 +166,6 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 console.log(checkWinner(scoreDolphins, scoreKoalas));
-*/
 
 ///How to call a function
 const fullName = function (firstName) {
@@ -192,4 +191,21 @@ const randGame = function (bringNo) {
 	}
 };
 
-randGame(0);
+randGame(1);
+*/
+
+////ARRAYS
+//Instead of storing more than one variables like this
+const friend1 = 'Micheal';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+//use an array to store them like this:
+const friends = ['Micheal', 'Steven', 'Peter'];//basic way of calling an array called 'a literal syntax'.
+console.log(friends);
+const years = new Array(1991, 1984, 2008, 2020);//we called the array function here using 'new Array'(we use new so that the function can run without the new keyword it wouldnt run)
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);//used to get the number of elements in an Array.
+console.log(friends[friends.length - 1]);//used to get the last element of any Array.
