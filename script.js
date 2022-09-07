@@ -243,3 +243,12 @@ console.log(newLength);
 friends.unshift('John'); //.unshift adds element to the beginning of an array.
 console.log(friends);
 
+//Remove elements
+const popped = friends.pop(); //.pop removes the last element of an array.
+console.log(popped);
+console.log(friends);
+
+const shifted = friends.shift(); //.shift removes the first element of an array.
+console.log(shifted);
+console.log(friends);
+
