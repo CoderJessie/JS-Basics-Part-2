@@ -232,7 +232,7 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
+
 ////BASIC ARRAY METHODS
 //Add elements
 const friends = ['Micheal', 'Steven', 'Peter'];
@@ -263,6 +263,39 @@ console.log(friends.includes('Bob'));
 console.log(friends.includes(23));
 
 //The 'includes method' can be used to write conditionals
-if(friends.includes('Steven')){
+if (friends.includes('Steven')) {
 	console.log('You have a friend called Steven');
 }
+*/
+//////////////////////////////////////////
+//  Coding Challenge #2
+/*
+Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+
+1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100.
+2. And now let's use arrays! So create an array 'bills' containing the test data below.
+3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before.
+4. BONUS: Create an array 'total' containing the total values, so the bill + tip.
+
+HINT: Remenber that an array needs a value in each position, and that value can actually be the returned value of the function! So you can just call a function as array values (so don't store the tip values in seperate variables first, but right in the new array)
+
+TEST DATA: 125, 555 and 44
+
+GOOD LUCK
+*/
+
+//////SOLUTION TO CREATING A DATABASE
+///If you want to create a database do this:
+const dailyRecord = []; //If this line of code is inside the function then it should return each tip singly, but if outside as it is the function would add every tip it run to the array.
+
+function calcTip(bill) {
+	const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+	dailyRecord.push(tip);
+	console.log(dailyRecord);
+	return console.log(tip);
+}
+calcTip(125);
+calcTip(2);
+calcTip(20);
+calcTip(7);
+calcTip(2356);
