@@ -252,3 +252,7 @@ const shifted = friends.shift(); //.shift removes the first element of an array.
 console.log(shifted);
 console.log(friends);
 
+//.indexOf checks the position of a certain element in an array.
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
