@@ -192,7 +192,6 @@ const randGame = function (bringNo) {
 };
 
 randGame(1);
-*/
 
 ////ARRAYS
 //Instead of storing more than one variables like this
@@ -233,3 +232,14 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+////BASIC ARRAY METHODS
+//Add elements
+const friends = ['Micheal', 'Steven', 'Peter'];
+const newLength = friends.push('Jay'); //.push adds element to the end of an array.
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John'); //.unshift adds element to the beginning of an array.
+console.log(friends);
+
