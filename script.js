@@ -277,7 +277,7 @@ Steven is still building his tip calculator, using the same rules as before: Tip
 3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before.
 4. BONUS: Create an array 'total' containing the total values, so the bill + tip.
 
-HINT: Remenber that an array needs a value in each position, and that value can actually be the returned value of the function! So you can just call a function as array values (so don't store the tip values in seperate variables first, but right in the new array)
+HINT: Remember that an array needs a value in each position, and that value can actually be the returned value of the function! So you can just call a function as array values (so don't store the tip values in seperate variables first, but right in the new array)
 
 TEST DATA: 125, 555 and 44
 
@@ -297,7 +297,7 @@ calcTip(125);
 calcTip(100);
 calcTip(20);
 calcTip(2356);
-*/
+
 //////////SOLUTION TO CODING CHALLENGE #2
 const tips = [];
 const total = [];
@@ -317,3 +317,15 @@ const bills = [125, 555, 44];
 console.log(bills);
 console.log(tips);
 console.log(total);
+*/
+////////////SOLUTION 2/////////////
+const calcTip = function(bill){
+	return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+//const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
