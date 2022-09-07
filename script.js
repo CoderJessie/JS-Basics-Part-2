@@ -282,7 +282,6 @@ HINT: Remenber that an array needs a value in each position, and that value can 
 TEST DATA: 125, 555 and 44
 
 GOOD LUCK
-*/
 
 //////SOLUTION TO CREATING A DATABASE
 ///If you want to create a database do this:
@@ -295,7 +294,26 @@ function calcTip(bill) {
 	return console.log(tip);
 }
 calcTip(125);
-calcTip(2);
+calcTip(100);
 calcTip(20);
-calcTip(7);
 calcTip(2356);
+*/
+//////////SOLUTION TO CODING CHALLENGE #2
+const tips = [];
+const total = [];
+
+function calcTip(bill) {
+	const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+	const sum = bill + tip;
+	total.push(sum);
+	tips.push(tip);
+	return console.log(tip);
+}
+calcTip(125);
+calcTip(555);
+calcTip(44);
+
+const bills = [125, 555, 44];
+console.log(bills);
+console.log(tips);
+console.log(total);
