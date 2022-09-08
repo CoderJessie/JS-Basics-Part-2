@@ -367,3 +367,11 @@ console.log(jonas['last' + nameKey]);
 
 // console.log(jonas.'last' + nameKey); This doesnt work for dot notation.
 
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+
+//Little exercise on retrieving an element from an object
+if(jonas[interestedIn]){
+	console.log(jonas[interestedIn]); 
+}else{
+	console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+} 
