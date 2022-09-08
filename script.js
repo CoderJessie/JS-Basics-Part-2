@@ -381,3 +381,8 @@ jonas.location = 'Portugal';
 jonas['twitter'] = '@jonasschmedtman';
 console.log(jonas); 
 
+//Challenge
+//"Jonas has three friends, and his best friend is called Micheal"  What you need to get is 'jonas', 'three', and 'Micheal'.
+
+//SOLUTION
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
