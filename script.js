@@ -21,7 +21,8 @@ logger();
 logger();
 
 function fruitProcessor(apples, oranges) {
-	const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+	const ju'ce = 'Juice with ${apples} apples and ${oranges} 
+	console.log(jonas['last' + nameKey]);oranges.`;
 	return juice;
 }
 
@@ -329,7 +330,7 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
-*/
+
 //////OBJECTS
 const jonasArray = [
 	'Jonas',
@@ -346,3 +347,14 @@ const jonas = {
 	job: 'teacher',
 	friends: ['Micheal', 'Peter', 'Steven'],
 }; //This is the easiest way of creating an object it is called 'object literal syntax'.
+*/
+///DOT VS. BRACKET NOTATION
+const jonas = {
+	firstName: 'Jonas',
+	lastName: 'Schmedtmann',
+	age: 2037 - 1991,
+	job: 'teacher',
+	friends: ['Micheal', 'Peter', 'Steven'],
+}; 
+console.log(jonas); 
+
