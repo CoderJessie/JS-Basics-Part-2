@@ -347,7 +347,7 @@ const jonas = {
 	job: 'teacher',
 	friends: ['Micheal', 'Peter', 'Steven'],
 }; //This is the easiest way of creating an object it is called 'object literal syntax'.
-*/
+
 ///DOT VS. BRACKET NOTATION
 const jonas = {
 	firstName: 'Jonas',
@@ -386,3 +386,20 @@ console.log(jonas);
 
 //SOLUTION
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+*/
+///OBJECT METHODS
+const jonas = {
+	firstName: 'Jonas',
+	lastName: 'Schmedtmann',
+	birthYear: 1991,
+	job: 'teacher',
+	friends: ['Micheal', 'Peter', 'Steven'],
+	hasDriversLicense: true,
+
+	calcAge: function (birthYear) {    //calcAge is a method
+		return 2037 - birthYear;
+	},
+};
+
+console.log(jonas.calcAge(1991));
+console.log(jonas[`calcAge`](1991));
