@@ -474,21 +474,34 @@ console.log(mark.calcBMI());
 console.log(john.calcBMI());
 console.log(mark.getSummary());
 console.log(john.getSummary());
-*/
 
 /////LOOPS
-console.log('Lifting weights repetition 1');
-console.log('Lifting weights repetition 2');
-console.log('Lifting weights repetition 3');
-console.log('Lifting weights repetition 4');
-console.log('Lifting weights repetition 5');
-console.log('Lifting weights repetition 6');
-console.log('Lifting weights repetition 7');
-console.log('Lifting weights repetition 8');
-console.log('Lifting weights repetition 9');
-console.log('Lifting weights repetition 10');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 2');
+// console.log('Lifting weights repetition 3');
+// console.log('Lifting weights repetition 4');
+// console.log('Lifting weights repetition 5');
+// console.log('Lifting weights repetition 6');
+// console.log('Lifting weights repetition 7');
+// console.log('Lifting weights repetition 8');
+// console.log('Lifting weights repetition 9');
+// console.log('Lifting weights repetition 10');
 
 //'for' loop keeps running while condition is TRUE
 for (let rep = 1; rep <= 30; rep++) {
 	console.log(`Lifting weights repetition ${rep}`);
 }
+*/
+///THE 'FOR' LOOP
+const jonas = [
+	'Jonas',
+	'Schmedtmann',
+	2037 - 1991,
+	'teacher',
+	['Micheal', 'Peter', 'Steven'],
+	true,
+];
+//Assuming we want to log the elements of the array individually
+for (let i = 0; i < jonas.length; i++) {
+	console.log(jonas[i], typeof jonas[i]);
+} //looping arrays with 'for' loop
