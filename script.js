@@ -439,7 +439,6 @@ Let's go back to Mark and John comparing their BMI's! This time, let's use objec
 TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and 1.95 m tall.
 
 GOOD LUCK
-*/
 
 ////SOLUTION
 const mark = {
@@ -475,3 +474,21 @@ console.log(mark.calcBMI());
 console.log(john.calcBMI());
 console.log(mark.getSummary());
 console.log(john.getSummary());
+*/
+
+/////LOOPS
+console.log('Lifting weights repetition 1');
+console.log('Lifting weights repetition 2');
+console.log('Lifting weights repetition 3');
+console.log('Lifting weights repetition 4');
+console.log('Lifting weights repetition 5');
+console.log('Lifting weights repetition 6');
+console.log('Lifting weights repetition 7');
+console.log('Lifting weights repetition 8');
+console.log('Lifting weights repetition 9');
+console.log('Lifting weights repetition 10');
+
+//'for' loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 30; rep++) {
+	console.log(`Lifting weights repetition ${rep}`);
+}
