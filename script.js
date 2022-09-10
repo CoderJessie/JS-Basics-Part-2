@@ -443,12 +443,10 @@ GOOD LUCK
 
 ////SOLUTION
 const mark = {
-	firstName: 'Mark',
-	lastName: 'Miller',
 	fullName: 'Mark Miller',
 	mass: 78,
 	height: 1.69,
-	calcBMI: function (BMI) {
+	calcBMI: function () {
 		this.BMI = this.mass / this.height ** 2;
 		return this.BMI;
 	},
@@ -460,12 +458,10 @@ const mark = {
 };
 
 const john = {
-	firstName: 'John',
-	lastName: 'Smith',
 	fullName: 'John Smith',
 	mass: 92,
 	height: 1.95,
-	calcBMI: function (BMI) {
+	calcBMI: function () {
 		this.BMI = this.mass / this.height ** 2;
 		return this.BMI;
 	},
