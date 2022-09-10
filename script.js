@@ -501,7 +501,14 @@ const jonas = [
 	['Micheal', 'Peter', 'Steven'],
 	true,
 ];
+const types = [];
 //Assuming we want to log the elements of the array individually
 for (let i = 0; i < jonas.length; i++) {
+	//Reading from jonas array
 	console.log(jonas[i], typeof jonas[i]);
+
+	//Filling the types array
+	types[i] = typeof jonas[i];
 } //looping arrays with 'for' loop
+
+console.log(types);
