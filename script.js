@@ -508,7 +508,17 @@ for (let i = 0; i < jonas.length; i++) {
 	console.log(jonas[i], typeof jonas[i]);
 
 	//Filling the types array
-	types[i] = typeof jonas[i];
+	// types[i] = typeof jonas[i];
+	types.push(typeof jonas[i]);
 } //looping arrays with 'for' loop
 
 console.log(types);
+
+///Application of the 'for' loop
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+	ages.push(2037 - years[i]); //.push because we are adding the result to the ages array.
+}
+console.log(ages);
