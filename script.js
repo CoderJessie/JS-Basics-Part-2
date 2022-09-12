@@ -491,7 +491,7 @@ console.log(john.getSummary());
 for (let rep = 1; rep <= 30; rep++) {
 	console.log(`Lifting weights repetition ${rep}`);
 }
-*/
+
 ///THE 'FOR' LOOP
 const jonas = [
 	'Jonas',
@@ -536,4 +536,20 @@ for (let i = 0; i < jonas.length; i++) {
 	if (typeof jonas[i] === 'number') break; //break statement
 
 	console.log(jonas[i], typeof jonas[i]);
+}
+*/
+//LOOPING BACKWARDS AND LOOPS IN LOOPS
+const jonas = [
+	'Jonas',
+	'Schmedtmann',
+	2037 - 1991,
+	'teacher',
+	['Micheal', 'Peter', 'Steven'],
+	true,
+];
+
+//0, 1, ..., 4 ==> looping forward
+//4, 3, ..., 0 ==> looping backward
+for (let i = jonas.length - 1; i >= 0; i--) {
+	console.log(jonas[i]);
 }
