@@ -522,3 +522,18 @@ for (let i = 0; i < years.length; i++) {
 	ages.push(2037 - years[i]); //.push because we are adding the result to the ages array.
 }
 console.log(ages);
+
+//IMPORTANT STATEMENT FOR LOOPS('CONTINUE' AND 'BREAK')
+console.log('---ONLY STRINGS---');
+for (let i = 0; i < jonas.length; i++) {
+	if (typeof jonas[i] !== 'string') continue; //'continue' statement
+
+	console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log('---BREAK WITH NUMBER---');
+for (let i = 0; i < jonas.length; i++) {
+	if (typeof jonas[i] === 'number') break; //break statement
+
+	console.log(jonas[i], typeof jonas[i]);
+}
