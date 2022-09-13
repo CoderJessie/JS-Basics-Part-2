@@ -565,6 +565,16 @@ for (let exercise = 1; exercise < 4; exercise++) {
 ////THE 'WHILE' LOOP
 let rep = 1;
 while (rep <= 10) {
-	console.log(`WHILE: Lifting weights repetition ${rep}`);
+	// console.log(`WHILE: Lifting weights repetition ${rep}`);
 	rep++;
+}
+//Rolling a dice to get a six
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+	console.log(`You rolled a ${dice}`);
+	dice = Math.trunc(Math.random() * 6) + 1;
+	if (dice === 6) {
+		console.log(`Loop is about to end...`);
+	}
 }
