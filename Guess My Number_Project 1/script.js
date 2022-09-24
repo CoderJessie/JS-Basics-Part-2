@@ -3,7 +3,7 @@
 /*
 console.log(document.querySelector('.message').textContent); //since its a class use(.) but if id use(#)
 
-//Selecting and Manipulatig Elements
+//Selecting and Manipulating Elements
 document.querySelector('.message').textContent = 'Correct Number!';
 
 document.querySelector('.number').textContent = 13;
@@ -21,10 +21,15 @@ document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
 
+  //When there is no input
   if (!guess) {
     document.querySelector('.message').textContent = 'No number!';
+
+    //when player wins
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct Number!';
+
+    //When guess is too high
   } else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = 'Too high!';
@@ -34,6 +39,8 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.message').textContent = 'You are a loser';
       document.querySelector('.score').textContent = 0;
     }
+
+    //When guess is too low
   } else if (guess < secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = 'Too high!';
