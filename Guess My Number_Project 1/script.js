@@ -13,8 +13,8 @@ document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
 */
 
-let secretNumber = Math.trunc(Math.random() * 10) + 1;
-let score = 5;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
 let highscore = 0;
 
 //Handling Click Events
@@ -39,21 +39,11 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.highscore').textContent = highscore;
     }
 
-    //When guess is too high
-  } else if (guess > secretNumber) {
+    //When guess is wrong
+  } else if (guess !== secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too high!';
-      score--;
-      document.querySelector('.score').textContent = score;
-    } else {
-      document.querySelector('.message').textContent = 'You are a loser';
-      document.querySelector('.score').textContent = 0;
-    }
-
-    //When guess is too low
-  } else if (guess < secretNumber) {
-    if (score > 1) {
-      document.querySelector('.message').textContent = 'Too low!';
+      document.querySelector('.message').textContent =
+        guess > secretNumber ? 'Too high!' : 'Too low';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -61,6 +51,28 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
+  //When guess is too high
+  // } else if (guess > secretNumber) {
+  //   if (score > 1) {
+  //     document.querySelector('.message').textContent = 'Too high!';
+  //     score--;
+  //     document.querySelector('.score').textContent = score;
+  //   } else {
+  //     document.querySelector('.message').textContent = 'You are a loser';
+  //     document.querySelector('.score').textContent = 0;
+  //   }
+
+  //   //When guess is too low
+  // } else if (guess < secretNumber) {
+  //   if (score > 1) {
+  //     document.querySelector('.message').textContent = 'Too low!';
+  //     score--;
+  //     document.querySelector('.score').textContent = score;
+  //   } else {
+  //     document.querySelector('.message').textContent = 'You are a loser';
+  //     document.querySelector('.score').textContent = 0;
+  //   }
+  // }
 });
 
 //////////////////////////////////
@@ -78,8 +90,8 @@ GOOD LUCK!
 
 ///SOLUTION
 document.querySelector('.again').addEventListener('click', function () {
-  score = 5;
-  secretNumber = Math.trunc(Math.random() * 10) + 1;
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
 
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = score;
