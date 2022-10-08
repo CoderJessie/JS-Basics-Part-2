@@ -6,7 +6,7 @@ const player1El = document.querySelector('.player--1');
 const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
-const curren10El = document.getElementById('current--1');
+const current1El = document.getElementById('current--1');
 
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
@@ -85,7 +85,8 @@ btnNew.addEventListener('click', function () {
 	score0El.textContent = 0;
 	score1El.textContent = 0;
 	diceEl.classList.add('hidden');
-	currentScore = 0;
+	current0El.textContent = 0;
+	current1El.textContent = 0;
 
 	if (scores[activePlayer] >= 20) {
 		playing = true;
@@ -93,14 +94,9 @@ btnNew.addEventListener('click', function () {
 		activePlayer = activePlayer === 0 ? 1 : 0;
 		document
 			.querySelector('.player--${activePlayer}')
-			.classList.add('player--active');
+			.classList.toggle('player--active');
 		document
-			.querySelector('.player--${activePlayer}')
+			.querySelector('.player--{activePlayer}')
 			.classList.toggle('player--winner');
-
-		document.getElementById(`current--${activePlayer}`).textContent =
-			currentScore;
-
-		document.getElementById(`current--${activePlayer}`).textContent = 0;
 	}
 });
