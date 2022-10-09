@@ -88,15 +88,16 @@ btnNew.addEventListener('click', function () {
 	current0El.textContent = 0;
 	current1El.textContent = 0;
 
-	if (scores[activePlayer] >= 20) {
-		playing = true;
-		currentScore = 0;
-		activePlayer = activePlayer === 0 ? 1 : 0;
-		document
-			.querySelector('.player--${activePlayer}')
-			.classList.toggle('player--active');
-		document
-			.querySelector('.player--{activePlayer}')
-			.classList.toggle('player--winner');
-	}
+	playing = true;
+	document.getElementById(`current--${activePlayer}`).textContent = 0;
+	currentScore = 0;
+	activePlayer = 0;
+	activePlayer = activePlayer === 0 ? 1 : 0;
+
+	console.log(activePlayer);
+	player0El.classList.remove('player--winner');
+	player1El.classList.remove('player--winner');
+	document
+		.querySelector('.player--${activePlayer}')
+		.classList.add('player--active');
 });
